@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:autofillHints="@string/username"
+        android:background="#0000"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:padding="14dp"
+        android:textColor="#404547"
+        android:textColorHint="#76818a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="289dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="316dp"
+        android:autofillHints="Password"
+        android:background="#0000"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:padding="14dp"
+        android:textColor="#404547"
+        android:textColorHint="#76818a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusername"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:layout_width="353dp"
+        android:layout_height="54dp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.159" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
